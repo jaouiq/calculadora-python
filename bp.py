@@ -28,5 +28,17 @@ while True:
         case '%':
             print(f'O resto da divisão é {x % y}.')
         case _:
-            print('Operação inválida')
+            print('Operação inválida.')
             continue
+
+    # pergunta para o usuário se deseja continuar ou encerrar
+    continuar = input('Deseja continuar (s/n)? ')
+
+    # verifica a opção do usuário
+    if continuar == 's':
+        continue
+    elif continuar == 'n':
+        break
+    else:
+        print('Opção inválida.')
+        continue
